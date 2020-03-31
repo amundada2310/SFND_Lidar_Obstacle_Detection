@@ -4,6 +4,7 @@
 //#include "render/render.h"
 
 
+
 // Structure to represent node of kd tree
 struct Node
 {
@@ -55,7 +56,7 @@ struct KdTree
 
 	void searchHelper(std::vector<float> target, Node* node, uint depth, float distanceTol, std::vector<int>& ids)//note node pointer and ids adress ref
 	{
-		uint cd = depth % 3;//3 dimensions
+		uint cd = depth % 3;//3 dimensions // %2 - for 2dimension
 
 		if(node!=NULL)
 		{
@@ -69,7 +70,7 @@ struct KdTree
 				ids.push_back(node->id);//add that point id
 			}
 
-			//uint cd = depth % 3;//3 dimensions
+			//uint cd = depth % 3;//3 dimensions 
 			if((target[cd]-distanceTol)<node->point[cd])//add the target point to the left 
 			searchHelper(target, node->left, depth+1, distanceTol, ids);
 			if((target[cd]+distanceTol)>node->point[cd])//add the target point to the right 
