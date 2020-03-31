@@ -3,7 +3,6 @@
 #include "processPointClouds.h"
 #include <unordered_set>
 
-
 //constructor:
 template<typename PointT>
 ProcessPointClouds<PointT>::ProcessPointClouds() {}
