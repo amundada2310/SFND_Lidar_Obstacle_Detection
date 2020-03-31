@@ -4,6 +4,7 @@
 #include <ctime>
 #include <chrono>
 
+
 const double pi = 3.1415;
 
 struct Ray
