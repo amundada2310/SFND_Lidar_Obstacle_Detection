@@ -2,7 +2,6 @@
 // Create simple 3d highway enviroment using PCL
 // for exploring self-driving car sensors
 
-
 #include "sensors/lidar.h"
 #include "render/render.h"
 #include "processPointClouds.h"
