@@ -1,6 +1,8 @@
 /* \author Aaron Brown */
 // Quiz on implementing simple RANSAC line fitting
 
+//called from environmental.cpp for running clustering function
+
 //#include "render/render.h"
 //#include "render/box.h"
 #include <chrono>
